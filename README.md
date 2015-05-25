@@ -1,5 +1,3 @@
-Private CPP code
-
 DisFSServer
 C implementation for distributed file system simulator.
 
@@ -22,9 +20,10 @@ Homework from SFU, demo the different task assigement in multithread programming
 
 guass
 Homework from SFU, accelerate task solving with multithread programming.
-  echo # cpp >> README.md
-  git init
-  git add README.md
-  git commit -m "first commit"
-  git remote add origin https://github.com/ahsyh/cpp.git
-  git push -u origin master
+
+echo # cpp >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ahsyh/cpp.git
+git push -u origin master
