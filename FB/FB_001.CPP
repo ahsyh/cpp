@@ -15,6 +15,7 @@
 
 using namespace std;
 
+
 typedef struct one_guess{
 	vector<int> guess;
 	int score;
@@ -208,12 +209,10 @@ bool test(
 	k = tcase.k;
 
 	if(curr>=q){
-#ifdef _TEST_
-		for(int i=0;i<k;i++){
-			cout << select[i] << ",";
-		}
-		cout << endl;
-#endif
+//		for(int i=0;i<k;i++){
+//			cout << select[i] << ",";
+//		}
+//		cout << endl;
 		return true;
 	}
 
@@ -270,36 +269,17 @@ void check_one_case(one_case &tcase){
 }
 
 void check_cases(){
-#ifdef _TEST_
-	struct timeval otv, ctv;
-	struct timezone tz;
-	gettimeofday(&otv, &tz);
-#endif
 	for(int i=0;i<(int)g_cases.size();i++ ){
 		check_one_case(g_cases[i]);
-#ifdef _TEST_
-		gettimeofday(&ctv, &tz);
-		if(ctv.tv_usec > otv.tv_usec)
-			cout << "used " << ctv.tv_sec - otv.tv_sec << " sec and "
-				<< ctv.tv_usec - otv.tv_usec << " usec" << endl;
-		else
-			cout << "used " << ctv.tv_sec - otv.tv_sec - 1 << " sec and "
-				<< 1000000 + ctv.tv_usec - otv.tv_usec << " usec" << endl;
-
-		otv = ctv;
-#endif
 	}
 }
 
 int main() {
-#ifdef _TEST_
 	ifstream file;
 	file.open("input001.txt");
 
 	read_para(file);
-#else
-	read_para(cin);
-#endif
+
 	check_cases();
 
 	return 0;
