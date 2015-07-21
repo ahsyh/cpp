@@ -1,0 +1,15 @@
+This is a testing problem I met with in 2013. The origin problem is:
+n: range of number
+k: how many number in one sequence
+q: how many times player guess
+host specify a sequence of number, player try to guess the result. Each time player show a guess, and host give the answer that how many number are correct.
+Given a guess list, check whether it is possible.
+
+n k q
+9 5 6
+6 6 2 7 7 3
+2 4 3 8 2 3
+3 5 3 2 3 3
+7 4 8 4 3 3
+5 1 8 4 7 3
+3 5 6 8 7 5
