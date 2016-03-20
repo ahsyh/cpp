@@ -1,0 +1,10 @@
+!SESSION 2016-03-18 16:48:30.854 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-03-18 16:50:21.911
+!MESSAGE Indexed 'unplib' (61 sources, 148 headers) in 8.48 sec: 6,068 declarations; 8,644 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
