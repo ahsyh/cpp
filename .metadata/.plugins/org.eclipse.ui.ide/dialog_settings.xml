@@ -5,6 +5,9 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/yihuishi/github/cpp/ValkyriePath"/>
+			<item value="/home/yihuishi/github/cpp/wtc/DisFSServer"/>
+			<item value="/home/yihuishi/github/cpp/wtc/unplib"/>
 			<item value="/home/yihuishi/tmp/cpp/unplib"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

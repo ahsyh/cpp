@@ -1,0 +1,50 @@
+09:36:53 **** Incremental Build of configuration Debug for project DisFSServer ****
+make all 
+Building file: ../src/CManager.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/yihuishi/github/cpp/wtc/unplib/src" -O0 -std=c++0x -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CManager.d" -MT"src/CManager.d" -o "src/CManager.o" "../src/CManager.cpp"
+Finished building: ../src/CManager.cpp
+ 
+Building file: ../src/CParameter.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/yihuishi/github/cpp/wtc/unplib/src" -O0 -std=c++0x -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CParameter.d" -MT"src/CParameter.d" -o "src/CParameter.o" "../src/CParameter.cpp"
+Finished building: ../src/CParameter.cpp
+ 
+Building file: ../src/CSeqGenerator.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/yihuishi/github/cpp/wtc/unplib/src" -O0 -std=c++0x -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CSeqGenerator.d" -MT"src/CSeqGenerator.d" -o "src/CSeqGenerator.o" "../src/CSeqGenerator.cpp"
+Finished building: ../src/CSeqGenerator.cpp
+ 
+Building file: ../src/CTasks.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/yihuishi/github/cpp/wtc/unplib/src" -O0 -std=c++0x -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CTasks.d" -MT"src/CTasks.d" -o "src/CTasks.o" "../src/CTasks.cpp"
+Finished building: ../src/CTasks.cpp
+ 
+Building file: ../src/CWorker.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/yihuishi/github/cpp/wtc/unplib/src" -O0 -std=c++0x -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CWorker.d" -MT"src/CWorker.d" -o "src/CWorker.o" "../src/CWorker.cpp"
+Finished building: ../src/CWorker.cpp
+ 
+Building file: ../src/DisFSServer.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/yihuishi/github/cpp/wtc/unplib/src" -O0 -std=c++0x -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisFSServer.d" -MT"src/DisFSServer.d" -o "src/DisFSServer.o" "../src/DisFSServer.cpp"
+Finished building: ../src/DisFSServer.cpp
+ 
+Building file: ../src/message.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/yihuishi/github/cpp/wtc/unplib/src" -O0 -std=c++0x -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/message.d" -MT"src/message.d" -o "src/message.o" "../src/message.cpp"
+Finished building: ../src/message.cpp
+ 
+Building file: ../src/task_archive.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/yihuishi/github/cpp/wtc/unplib/src" -O0 -std=c++0x -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/task_archive.d" -MT"src/task_archive.d" -o "src/task_archive.o" "../src/task_archive.cpp"
+Finished building: ../src/task_archive.cpp
+ 
+Building target: DisFSServer
+Invoking: GCC C++ Linker
+g++ -L"/home/yihuishi/github/cpp/wtc/unplib/Debug" -o "DisFSServer"  ./src/CManager.o ./src/CParameter.o ./src/CSeqGenerator.o ./src/CTasks.o ./src/CWorker.o ./src/DisFSServer.o ./src/message.o ./src/task_archive.o   -lpthread -lunplib
+Finished building target: DisFSServer
+ 
+
+09:37:01 Build Finished (took 7s.623ms)
+

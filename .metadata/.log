@@ -231,3 +231,19 @@ java.io.FileNotFoundException: /home/yihuishi/github/cpp/.metadata/.plugins/org.
 
 !ENTRY org.eclipse.cdt.core 1 0 2016-03-21 09:44:54.773
 !MESSAGE Indexed 'FB' (1 sources, 145 headers) in 11.1 sec: 12,243 declarations; 22,275 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.0058%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-03-21 10:29:27.375
+!MESSAGE Indexed 'ValkyriePath' (1 sources, 39 headers) in 0.869 sec: 1,300 declarations; 2,442 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2016-03-21 11:10:44.250 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-21 11:10:53.397
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-03-21 13:32:54.761
+!MESSAGE Indexed 'interview01' (1 sources, 104 headers) in 14 sec: 8,369 declarations; 14,562 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.0087%)
