@@ -1,20 +1,15 @@
-15:20:27 **** Incremental Build of configuration Debug for project interview01 ****
+16:47:14 **** Incremental Build of configuration Debug for project interview01 ****
 make all 
-Building file: ../src/interview01.cpp
+Building file: ../src/findseq.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/interview01.d" -MT"src/interview01.d" -o "src/interview01.o" "../src/interview01.cpp"
-Finished building: ../src/interview01.cpp
- 
-Building file: ../src/question02.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/question02.d" -MT"src/question02.d" -o "src/question02.o" "../src/question02.cpp"
-Finished building: ../src/question02.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/findseq.d" -MT"src/findseq.d" -o "src/findseq.o" "../src/findseq.cpp"
+Finished building: ../src/findseq.cpp
  
 Building target: interview01
 Invoking: GCC C++ Linker
-g++  -o "interview01"  ./src/interview01.o ./src/maze.o ./src/question02.o ./src/question03.o   
+g++  -o "interview01"  ./src/findseq.o ./src/interview01.o ./src/maze.o ./src/question02.o ./src/question03.o   
 Finished building target: interview01
  
 
-15:20:29 Build Finished (took 1s.648ms)
+16:47:16 Build Finished (took 1s.386ms)
 

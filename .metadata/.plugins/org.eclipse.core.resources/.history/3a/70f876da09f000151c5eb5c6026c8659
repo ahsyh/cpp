@@ -1,0 +1,232 @@
+/*
+ * findseq.cpp
+ *
+ *  Created on: Mar 22, 2016
+ *      Author: yihuishi
+ */
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+typedef struct cont{
+	int order2;
+	int order3;
+	int order5;
+}cont_t;
+
+static const int MAXSEQ=1600;
+static cont_t list[MAXSEQ];
+
+static int getNum(int i, int j, int k){
+	int res=1;
+	res *= (int)pow(2, i);
+	res *= (int)pow(3, j);
+	res *= (int)pow(5, k);
+
+	return res;
+}
+
+int findseq01(int seq)
+{
+	if(seq>MAXSEQ)
+		return -1;
+
+	int last=1;
+	list[0].order2 = 0;
+	list[0].order3 = 0;
+	list[0].order5 = 0;
+
+	int cand2;
+	int cand3;
+	int cand5;
+	cont_t cand2_cont;
+	cont_t cand3_cont;
+	cont_t cand5_cont;
+	bool find2,find3,find5;
+
+	for(int i=1;i<=seq;i++){
+		find2=find3=find5=false;
+
+		//search for next combination
+		for(int j=0;j<i;j++){
+			int o2,o3,o5;
+			o2=list[j].order2;
+			o3=list[j].order3;
+			o5=list[j].order5;
+
+			int t;
+			if(!find2){
+				t=getNum(o2+1,o3,o5);
+				if(t>last){
+					find2=true;
+					cand2_cont.order2 = o2+1;
+					cand2_cont.order3 = o3;
+					cand2_cont.order5 = o5;
+					cand2=t;
+				}
+			}
+			if(!find3){
+				t=getNum(o2,o3+1,o5);
+				if(t>last){
+					find3=true;
+					cand3_cont.order2 = o2;
+					cand3_cont.order3 = o3+1;
+					cand3_cont.order5 = o5;
+					cand3=t;
+				}
+			}
+			if(!find5){
+				t=getNum(o2,o3,o5+1);
+				if(t>last){
+					find5=true;
+					cand5_cont.order2 = o2;
+					cand5_cont.order3 = o3;
+					cand5_cont.order5 = o5+1;
+					cand5=t;
+				}
+			}
+
+			if(find2&&find3&&find5){
+				int k=cand2;
+				k=(cand3<k)?cand3:k;
+				k=(cand5<k)?cand5:k;
+
+				last = k;
+				if(k == cand2){
+					list[i].order2 = cand2_cont.order2;
+					list[i].order3 = cand2_cont.order3;
+					list[i].order5 = cand2_cont.order5;
+				}
+				else if(k==cand3){
+					list[i].order2 = cand3_cont.order2;
+					list[i].order3 = cand3_cont.order3;
+					list[i].order5 = cand3_cont.order5;
+				}
+				else if(k==cand5){
+					list[i].order2 = cand5_cont.order2;
+					list[i].order3 = cand5_cont.order3;
+					list[i].order5 = cand5_cont.order5;
+				}
+
+				break;
+			}
+		}
+
+
+	}
+
+
+	return getNum(list[seq-1].order2,
+			list[seq-1].order3,
+			list[seq-1].order5);
+}
+
+static const int MAXSEQ=16000;
+//static long list[MAXSEQ];
+
+static long findseq02(int seq)
+{
+	if(seq>MAXSEQ)
+		return -1;
+
+	long last=1;
+	list[0] = 1;
+
+	long cand2;
+	long cand3;
+	long cand5;
+	bool find2;
+	bool find3;
+	bool find5;
+
+
+	for(int i=1;i<=seq;i++){
+
+		find2=find3=find5=false;
+		//search for next combination
+		for(int j=0;j<=seq;j++){
+			long t = list[j];
+
+			if(!find2&&t*2>last){
+				cand2 = t*2;
+				find2=true;
+			}
+			if(!find3&&t*3>last){
+				cand3 = t*3;
+				find3=true;
+			}
+			if(!find5&&t*5>last){
+				cand5 = t*5;
+				find5=true;
+			}
+
+			if(find2&&find3&&find5)
+				break;
+		}
+
+		if(find2&&find3&&find5)
+		{
+			long k=cand2;
+			k=(cand3<k)?cand3:k;
+			k=(cand5<k)?cand5:k;
+
+			last = k;
+			list[i]=k;
+		}
+		else{
+			break;
+		}
+	}
+
+
+	return list[seq-1];
+}
+
+long findseq03(int seq)
+{
+	if(seq>MAXSEQ)
+		return -1;
+
+	long last=1;
+	list[0] = 1;
+
+	long cand2;
+	long cand3;
+	long cand5;
+
+	for(int i=1;i<=seq;i++){
+
+		//search for next combination
+		for(int j=i-1;j>=0;j--){
+			long border = last/5;
+
+			long t = list[j];
+
+			if(t<border){
+				break;
+			}
+
+			if(t*2>last){
+				cand2 = t*2;
+			}
+			if(t*3>last){
+				cand3 = t*3;
+			}
+			if(t*5>last){
+				cand5 = t*5;
+			}
+		}
+
+		long k=cand2;
+		k=(cand3<k)?cand3:k;
+		k=(cand5<k)?cand5:k;
+
+		last = k;
+		list[i]=k;
+	}
+
+
+	return list[seq-1];
+}
