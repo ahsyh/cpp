@@ -14,4 +14,7 @@
 			<item value=""/>
 		</list>
 	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item value="/home/yihuishi/github/cpp/wtc" key="OUTSIDE_LOCATION"/>
+	</section>
 </section>

@@ -1,17 +1,22 @@
-15:20:27 **** Incremental Build of configuration Debug for project interview01 ****
+09:24:14 **** Incremental Build of configuration Debug for project FB ****
 make all 
-Building file: ../src/interview01.cpp
+Building file: ../fbinterview01.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/interview01.d" -MT"src/interview01.d" -o "src/interview01.o" "../src/interview01.cpp"
-Finished building: ../src/interview01.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fbinterview01.d" -MT"fbinterview01.d" -o "fbinterview01.o" "../fbinterview01.cpp"
+Finished building: ../fbinterview01.cpp
  
-Building file: ../src/question02.cpp
+Building file: ../method01.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/question02.d" -MT"src/question02.d" -o "src/question02.o" "../src/question02.cpp"
-Finished building: ../src/question02.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"method01.d" -MT"method01.d" -o "method01.o" "../method01.cpp"
+Finished building: ../method01.cpp
  
-Building target: interview01
+Building file: ../method02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"method02.d" -MT"method02.d" -o "method02.o" "../method02.cpp"
+Finished building: ../method02.cpp
+ 
+Building target: FB
 Invoking: GCC C++ Linker
-g++  -o "interview01"  ./src/interview01.o ./src/maze.o ./src/question02.o ./src/question03.o   
-Finished building target: interview01
+g++  -o "FB"  ./fbinterview01.o ./method01.o ./method02.o   
+Finished building target: FB
  

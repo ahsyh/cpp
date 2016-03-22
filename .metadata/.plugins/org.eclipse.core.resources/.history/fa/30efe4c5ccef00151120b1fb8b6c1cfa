@@ -21,8 +21,12 @@ extern int method02();
 
 
 int main() {
-	method01();
-	method02();
+	ifstream file;
+	file.open("input001.txt");
+
+	read_para(file);
+
+	check_cases();
 
 	return 0;
 }
