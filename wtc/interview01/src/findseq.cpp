@@ -235,7 +235,13 @@ int testFindSeq() {
 	int i=15000;
 	cout << i <<": " << findseq02(i) << endl;
 	for(int i=4500;i<5020;i++){
+		cout << i <<": " << findseq01(i) << endl;
+	}
+	for(int i=4500;i<5020;i++){
 		cout << i <<": " << findseq02(i) << endl;
+	}
+	for(int i=4500;i<5020;i++){
+		cout << i <<": " << findseq03(i) << endl;
 	}
 	return 0;
 }

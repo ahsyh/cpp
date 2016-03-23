@@ -247,3 +247,13 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.cdt.core 1 0 2016-03-21 13:32:54.761
 !MESSAGE Indexed 'interview01' (1 sources, 104 headers) in 14 sec: 8,369 declarations; 14,562 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.0087%)
+!SESSION 2016-03-23 08:31:59.462 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-23 08:32:06.216
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
