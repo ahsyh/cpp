@@ -1,4 +1,4 @@
-09:50:38 **** Incremental Build of configuration Debug for project study ****
+13:44:14 **** Incremental Build of configuration Debug for project study ****
 make all 
 Building file: ../src/student.cpp
 Invoking: GCC C++ Compiler

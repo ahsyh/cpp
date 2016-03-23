@@ -6,26 +6,13 @@
  */
 
 
+#include "CStudent.h"
+
+
 #include <algorithm>
 #include <vector>
 
-#include <string>
-#include <string.h>
-
 using namespace std;
-
-class CStudent {
-public:
-	CStudent(string n, int a){
-		// TODO Auto-generated constructor stub
-		strncpy(m_Name,n.c_str(),8);
-		m_Age = a;
-	};
-	virtual ~CStudent(){};
-
-	char m_Name[8];
-	int m_Age;
-};
 
 int cmp( const CStudent &a, const CStudent &b ){
     if( a.m_Age < b.m_Age )
