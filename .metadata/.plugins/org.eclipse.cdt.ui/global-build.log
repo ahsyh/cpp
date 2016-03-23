@@ -1,12 +1,12 @@
-08:38:58 **** Incremental Build of configuration Debug for project interview01 ****
+09:50:38 **** Incremental Build of configuration Debug for project study ****
 make all 
-Building file: ../src/findseq.cpp
+Building file: ../src/student.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/findseq.d" -MT"src/findseq.d" -o "src/findseq.o" "../src/findseq.cpp"
-Finished building: ../src/findseq.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.d" -o "src/student.o" "../src/student.cpp"
+Finished building: ../src/student.cpp
  
-Building target: interview01
+Building target: study
 Invoking: GCC C++ Linker
-g++  -o "interview01"  ./src/findseq.o ./src/interview01.o ./src/maze.o ./src/question02.o ./src/question03.o   
-Finished building target: interview01
+g++  -o "study"  ./src/bits.o ./src/student.o ./src/study.o   
+Finished building target: study
  

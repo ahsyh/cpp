@@ -257,3 +257,12 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.core.resources 2 10035 2016-03-23 08:32:06.216
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-03-23 09:22:39.946
+!MESSAGE Indexed 'ValkyriePath' (1 sources, 39 headers) in 1.68 sec: 1,300 declarations; 2,442 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-03-23 09:23:12.789
+!MESSAGE Indexed 'study' (1 sources, 104 headers) in 8.05 sec: 8,369 declarations; 14,562 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.0087%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-03-23 09:23:58.920
+!MESSAGE Indexed 'study' (1 sources, 104 headers) in 5.49 sec: 8,369 declarations; 14,562 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.0087%)

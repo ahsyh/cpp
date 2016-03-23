@@ -12,5 +12,6 @@
 extern int testMaze();
 extern int testQ2();
 extern int testQ3();
+extern int testLinkOp();
 
 #endif /* INTERVIEW01_H_ */

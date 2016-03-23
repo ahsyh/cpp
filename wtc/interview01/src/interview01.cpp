@@ -15,5 +15,6 @@ int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	testMaze();
 	testQ3();
+	testLinkOp();
 	return 0;
 }

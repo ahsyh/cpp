@@ -1,0 +1,15 @@
+09:50:38 **** Incremental Build of configuration Debug for project study ****
+make all 
+Building file: ../src/student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.d" -o "src/student.o" "../src/student.cpp"
+Finished building: ../src/student.cpp
+ 
+Building target: study
+Invoking: GCC C++ Linker
+g++  -o "study"  ./src/bits.o ./src/student.o ./src/study.o   
+Finished building target: study
+ 
+
+09:50:39 Build Finished (took 1s.423ms)
+
